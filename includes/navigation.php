@@ -8,4 +8,16 @@
 	  <li class="nav-item">
 	    <a class="nav-link <?php if ($CURRENT_PAGE == "Tilt") {?>active<?php }?>" href="tilt.php">tilt</a>
 	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link <?php if ($CURRENT_PAGE == "Flowmap") {?>active<?php }?>" href="flowmap.php">flowmap</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link <?php if ($CURRENT_PAGE == "Cycle") {?>active<?php }?>" href="cycle.php">cycle</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link <?php if ($CURRENT_PAGE == "Darkmode") {?>active<?php }?>" href="darkmode.php">darkmode</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link <?php if ($CURRENT_PAGE == "Imagesloaded") {?>active<?php }?>" href="imagesloaded.php">imagesloaded</a>
+	  </li>
 	</ul>

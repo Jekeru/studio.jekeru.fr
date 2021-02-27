@@ -13,10 +13,10 @@
             <li class="hide-mobile">use key arrow to navigate</li>
             <li><a class="nav-item" href="css.php">Prev</a></li>
             <li><a class="nav-item active" href="tilt.php">INDX</a></li>
-            <li><a class="nav-item" href="index.php">Next</a></li>
+            <li><a class="nav-item" href="flowmap.php">Next</a></li>
         </nav>
 </header>
-<h1 id="Studio"><a nohref="" class="wow fadeInRight"><span>tilt*</span></a></h1>
+<h1 id="Studio"><a href="#btm" class="wow fadeInRight"><span>tilt*</span></a></h1>
 <!--  -->
 <div class="container" id="main-content">
     <style>
@@ -146,7 +146,7 @@
                 <img src="./assets/img/YKN.jpg">
             </div>
     </div>
-    <div class="container row h100">
+    <!-- <div class="container row h100">
             <a href="#top" class="logo tilt-me" id="logo">
                 <span>Jeke.ru</span>
             </a>
@@ -162,7 +162,7 @@
                     <p>Studio</p>
                 </div>
             </a>
-    </div>
+    </div> -->
     <script src="./node_modules/vanilla-tilt/dist/vanilla-tilt.min.js"></script>
     <script>
         //matchmedia

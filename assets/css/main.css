@@ -90,12 +90,21 @@ a:active,
     align-items: center;
 }
 
+.footer {
+    position: fixed;
+    top: 1rem;
+    left: 0;
+    right: 0;
+    height: 0;
+}
+
 .container.row {
     width: 100%;
 }
 
 .container.row.h100 {
     min-height: 100vh;
+    justify-content: center;
 }
 
 @media all and (min-width: 768px) {
@@ -122,11 +131,11 @@ nav.main {
     flex-flow: wrap;
     justify-content: flex-end;
     align-items: baseline;
-    z-index: +2;
+    z-index: +999;
 }
 
 nav.main li {
-    padding: 10px;
+    padding: 1rem;
 }
 
 ul,
@@ -140,18 +149,20 @@ li {
 #Jekeru {
     cursor: url("https://jekeru.fr/assets/img/cursor.png"), ew-resize;
     position: relative;
-    font-size: 19vw;
-    /* margin: auto; */
-    /* padding: 1rem; */
-    /* line-height: 90vh; */
-    height: 100%;
+    height: calc(100% - 1rem);
     margin: 0;
-    padding: 1rem;
+    padding: 0;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     flex-flow: column;
     overflow: hidden;
+}
+
+#Studio a,
+#Jekeru a {
+    font-size: 20vmax;
+    line-height: 23vmax;
 }
 
 @media all and (max-width: 768px) {
@@ -163,8 +174,9 @@ li {
 
     #Studio a span,
     #Jekeru a span {
-        transform-origin: 0 0;
-        transform: rotate(-90deg);
+        writing-mode: vertical-lr;
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
         display: flex;
     }
 }

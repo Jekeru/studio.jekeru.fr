@@ -16,9 +16,9 @@
 			<li><a class="nav-item" href="tilt.php">Next</a></li>
 		</nav>
 </header>
-<h1 id="Studio"><a nohref="" class="wow fadeInLeft"><span>css*</span></a></h1>
+<h1 id="Studio"><a href="#btm" class="wow fadeInLeft"><span>css*</span></a></h1>
 <!--  -->
-<div class="container" id="main-content">
+<div class="container" id="main-content" style="align-items: flex-end;">
 	<h1 class="pad-1 wow fadeInLeft" data-wow-delay=".2s">Studio.Jeke.ru</h1>
 	<h2 class="pad-1 wow fadeInLeft" data-wow-delay=".4s">Studio.Jeke.ru</h2>
 	<h3 class="pad-1 wow fadeInLeft" data-wow-delay=".6s">Studio.Jeke.ru</h3>
