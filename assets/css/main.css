@@ -1,0 +1,182 @@
+/* Fade effect */
+.js body {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.js body.render {
+    opacity: 1;
+}
+
+/* Fade effect */
+/* Custom CSS body html
+ * --------------------------------------- */
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    --color-text: #181a1e;
+    --color-text-dark: #292a2c;
+    --color-white: #1f1f1f;
+    --color-bg--trans: transparent !important;
+    --color-bg--body: #f1f1f1;
+    --color-bg: #f1f1f1;
+    --color-link: darkblue;
+    --color-link-hover: lightblue;
+    --color-link-visited: darkblue;
+    --color-link-active: lightgreen;
+    --color-box-shadow: #181a1e;
+}
+
+body {
+    background: var(--color-bg--body);
+    color: var(--color-text);
+    font-family: "source-code-pro";
+
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    overflow-x: hidden;
+}
+
+/* Custom CSS LINKS
+ * --------------------------------------- */
+:focus {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+
+a,
+a:link {
+    text-decoration: none;
+    color: var(--color-text-dark);
+    transition: color 0.3s;
+    cursor: crosshair;
+}
+
+a:visited {
+    color: var(--color-text-dark);
+    /*filter: invert();*/
+}
+
+a:hover {
+    color: var(--color-link-active);
+}
+
+a:active,
+.active {
+    color: var(--color-text-dark);
+    font-weight: 700;
+}
+
+
+/* Custom CSS SIZING
+ * --------------------------------------- */
+.main-container {
+    position: relative;
+    width: auto;
+    padding: 5px;
+}
+
+.container,
+.footer {
+    position: relative;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container.row {
+    width: 100%;
+}
+
+.container.row.h100 {
+    min-height: 100vh;
+}
+
+@media all and (min-width: 768px) {
+    #main-content {
+        max-width: 1280px;
+        margin: auto;
+    }
+}
+
+
+/* Custom CSS SPACING
+ * --------------------------------------- */
+.pad-1 {
+    padding: 1rem;
+}
+
+/* Custom CSS Nav
+ * --------------------------------------- */
+nav.main {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: flex-end;
+    align-items: baseline;
+    z-index: +2;
+}
+
+nav.main li {
+    padding: 10px;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+/* Custom CSS Customs
+ * --------------------------------------- */
+#Studio,
+#Jekeru {
+    cursor: url("https://jekeru.fr/assets/img/cursor.png"), ew-resize;
+    position: relative;
+    font-size: 19vw;
+    /* margin: auto; */
+    /* padding: 1rem; */
+    /* line-height: 90vh; */
+    height: 100%;
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-flow: column;
+    overflow: hidden;
+}
+
+@media all and (max-width: 768px) {
+
+    #Studio a,
+    #Jekeru a {
+        width: 100%;
+    }
+
+    #Studio a span,
+    #Jekeru a span {
+        transform-origin: 0 0;
+        transform: rotate(-90deg);
+        display: flex;
+    }
+}
+
+
+/* Custom CSS MOBILE
+ * --------------------------------------- */
+@media all and (max-width: 768px) {
+    .hide-mobile {
+        display: none !important;
+    }
+}
+
+/* Custom CSS Wow
+ * --------------------------------------- */
