@@ -1,4 +1,4 @@
-	<ul class="nav nav-pills" style="position:fixed;top:0;right:0;text-align:right;padding:1rem;z-index:+2">
+	<ul class="nav nav-pills" style="position:fixed;top:0;right:0;text-align:right;padding:1em;z-index:+2;margin:0">
 	  <li class="nav-item">
 	    <a class="nav-link <?php if ($CURRENT_PAGE == "Index") {?>active<?php }?>" href="index.php">Home</a>
 	  </li>
@@ -21,3 +21,6 @@
 	    <a class="nav-link <?php if ($CURRENT_PAGE == "Imagesloaded") {?>active<?php }?>" href="imagesloaded.php">imagesloaded</a>
 	  </li>
 	</ul>
+	<div id="darkmode" style="position:fixed;top:0;left:0;text-align:left;padding:1em;z-index:+2;margin:0;">
+        <div class="toggledark"></div>
+    </div>

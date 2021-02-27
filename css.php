@@ -18,7 +18,7 @@
 </header>
 <h1 id="Studio"><a href="#btm" class="wow fadeInLeft"><span>css*</span></a></h1>
 <!--  -->
-<div class="container" id="main-content" style="align-items: flex-end;">
+<div class="container" id="main-content" style="align-items: flex-end;padding:1em">
 	<h1 class="pad-1 wow fadeInLeft" data-wow-delay=".2s">Studio.Jeke.ru</h1>
 	<h2 class="pad-1 wow fadeInLeft" data-wow-delay=".4s">Studio.Jeke.ru</h2>
 	<h3 class="pad-1 wow fadeInLeft" data-wow-delay=".6s">Studio.Jeke.ru</h3>

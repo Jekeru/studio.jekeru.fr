@@ -33,13 +33,18 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-image: url('./assets/img/large.jpg');
+        /* background-image: url('./assets/img/large.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 50% 50%;
-        background-attachment: scroll;
+        background-attachment: scroll; */
         background-color: transparent;
         z-index: -1;
+        display:flex;
+    }
+    .cover-image video{
+        margin:auto;
+        max-width:50%
     }
 
     canvas.flowmap {
@@ -51,11 +56,13 @@
         left: 0;
         right: 0;
         bottom: 0;
-        z-index: +0;
+        z-index: -1;
     }
     /* Flowmap */
 </style>
-<div class="cover-image"></div>
+<div class="cover-image">
+<video autoplay muted loop playsinline src="https://jekeru.fr/assets/img/tstst.mp4"></video>
+</div>
 <script type="text/javascript" src="./assets/js/bundle.js"></script>
 <script type="module" src="./assets/js/flowmap.js"></script>
 </div>

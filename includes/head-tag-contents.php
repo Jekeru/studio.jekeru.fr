@@ -19,3 +19,6 @@
 <script>
 	document.documentElement.className = "js";
 </script>
+<script src="./assets/js/jquery/3.3.1/jquery.min.js"></script>
+<script src="./assets/js/jquery/1.4.1/jquery.cookie.min.js"></script>
+<script src="./assets/js/main-darkmode.js"></script>

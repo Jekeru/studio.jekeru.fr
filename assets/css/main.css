@@ -92,7 +92,7 @@ a:active,
 
 .footer {
     position: fixed;
-    top: 1rem;
+    top: 1em;
     left: 0;
     right: 0;
     height: 0;
@@ -135,7 +135,7 @@ nav.main {
 }
 
 nav.main li {
-    padding: 1rem;
+    padding: 1em;
 }
 
 ul,
@@ -149,7 +149,7 @@ li {
 #Jekeru {
     cursor: url("https://jekeru.fr/assets/img/cursor.png"), ew-resize;
     position: relative;
-    height: calc(100% - 1rem);
+    height: calc(100% - 0rem);
     margin: 0;
     padding: 0;
     display: flex;
@@ -159,10 +159,15 @@ li {
     overflow: hidden;
 }
 
+#Studio span,
+#Jekeru span {
+    padding: 1rem;
+}
+
 #Studio a,
 #Jekeru a {
-    font-size: 20vmax;
-    line-height: 23vmax;
+    font-size: 10vmax;
+    line-height: 13vmax;
 }
 
 @media all and (max-width: 768px) {
@@ -192,3 +197,56 @@ li {
 
 /* Custom CSS Wow
  * --------------------------------------- */
+
+
+
+/* Custom CSS Dark mode
+ * --------------------------------------- */
+body.dark--mode--jekeru {
+    --color-bg--body: #181a1e;
+    --color-text: #f1f1f1;
+    --color--black: #1f1f1f;
+    --color-text-dark: rgba(41, 82, 88, 0.97);
+    --color-link: rgb(41, 82, 88);
+    --color-link-hover: rgba(41, 82, 88, 0.57);
+    --color-link-visited: rgba(41, 82, 88, 0.747);
+    --color-link-active: rgba(41, 82, 88, 0.747);
+}
+
+.align-center-flex {
+    display: flex;
+    align-items: center;
+}
+
+.toggledark {
+    background: #f1f1f1;
+    border: 1px solid #1f1f1f;
+    width: 45px;
+    height: 20px;
+    cursor: crosshair;
+    border-radius: 20px;
+    transition: 0.5s;
+    transform: translate(25%);
+    display: flex;
+}
+
+.toggledark.active {
+    background: var(--color-text-dark);
+    border: 1px solid #f1f1f1;
+}
+
+.toggledark:before {
+    left: 0px;
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: var(--color-text-dark);
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.toggledark.active:before {
+    left: 27px;
+    background: #fff;
+}

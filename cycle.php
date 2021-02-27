@@ -28,6 +28,11 @@
         img.cycle-next {
             cursor: url(https://jekeru.fr/assets/img/cursor.png), e-resize;
         }
+
+        figcaption {
+            max-width:33vh;
+            text-align:center;
+        }
     </style>
     <section class="project container row h100">
         <figure class="cycle-slideshow" data-cycle-timeout="0" data-cycle-fx="none" data-cycle-speed="50"

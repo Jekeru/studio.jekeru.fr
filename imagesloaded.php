@@ -19,11 +19,10 @@
 <h1 id="Studio"><a href="#btm" class="wow fadeInRight"><span>imagesloaded*</span></a></h1>
 <!--  -->
 <div class="container" id="main-content">
-<img src="https://picsum.photos/300/300?random=1">
+<img src="https://picsum.photos/1080/720?random=1">
     <img src="https://picsum.photos/3000/3000?random=2">
     <img src="https://picsum.photos/4000/4000?random=3">
 
-    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/imagesloaded/imagesloaded.pkgd.min.js"></script>
     <script>
         $('#container').imagesLoaded()
