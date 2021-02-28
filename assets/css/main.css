@@ -159,6 +159,13 @@ li {
     overflow: hidden;
 }
 
+#Studio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
 #Studio span,
 #Jekeru span {
     padding: 1rem;
