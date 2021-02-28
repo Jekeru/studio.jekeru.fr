@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <!------------------------------------------------------------------->
+    <link rel="stylesheet" href="https://jekeru.fr/assets-main/css/base.min.css">
+    <link href="https://jekeru.fr/assets-main/css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="https://jekeru.fr/assets-main/css/common.css" rel="stylesheet" type="text/css" />
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://jekeru.fr/assets-main/font/css--jekeru--font.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://jekeru.fr/assets-main/css/css--jekeru.css" />
+    <!-- --- % --- -->
+    <link rel="stylesheet" type="text/css" href="../assets-lab/css/demo-zone.css" />
+    <script>
+        document.documentElement.className = "js";
+        var supportsCssVars = function() {
+            var e, t = document.createElement("style");
+            return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window
+                .CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
+        };
+        supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+    </script>
+</head>
+
+<body class="loading">
+    <div class="message">Please view this demo on a desktop.</div>
+    <div class="title">
+        <h2>Jekeru/lab</h2>
+    </div>
+    <div class="content--fixed">
+        <nav class="demos">
+            <a class="demo" href="index.html"><span>D1</span></a>
+            <a class="demo" href="index2.html"><span>D2</span></a>
+            <a class="demo" href="index3.html"><span>D3</span></a>
+            <a class="demo" href="index4.html"><span>D4</span></a>
+            <a class="demo" href="index5.html"><span>D5</span></a>
+            <a class="demo" href="index6.html"><span>D6</span></a>
+            <a class="demo" href="index7.html"><span>D7</span></a>
+            <a class="demo" href="index8.html"><span>D8</span></a>
+            <a class="demo" href="index9.html"><span>D9</span></a>
+            <a class="demo" href="index10.html"><span>D10</span></a>
+            <a class="demo" href="index11.html"><span>D11</span></a>
+            <a class="demo" href="index12.html"><span>D12</span></a>
+            <a class="demo" href="index-daj.html"><span>DDaj</span></a>
+            <a class="demo demo--current" href="index-lab.html"><span>DLab</span></a>
+            <a class="demo" href="index-stud.html"><span>Dstud</span></a>
+            <a class="demo" href="index-swsm.html"><span>Dswsm</span></a>
+        </nav>
+    </div>
+    <!-- 3dweb -->
+    <style>
+        .p5Canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            height: 100% !important;
+        }
+    </style>
+    <script src='../assets-online/p5.min.js' defer></script>
+    <script src='../assets-online/perlin.js' defer></script>
+    <script src="../assets-online/waves-3d/script-wave-3d.js" defer></script>
+    <!-- 3dweb -->
+
+    <script src="../assets-online/charming.min.js"></script>
+    <script src="../assets-online/imagesloaded.pkgd.min.js"></script>
+    <script src="../assets-online/greensock/TweenMax.min.js"></script>
+    <script src="../assets-online/img-hover.js"></script>
+    <!-- script pour overlat nav bar -->
+    <script>
+        var overlay = document.getElementById('overlay');
+        var closeMenu = document.getElementById('close-menu');
+
+        document.getElementById('open-menu').addEventListener('click', function() {
+            overlay.classList.add('show-menu');
+        })
+
+        document.getElementById('close-menu').addEventListener('click', function() {
+            overlay.classList.remove('show-menu');
+        })
+    </script>
+    <!-- <script src="js/anime.min.js"></script>-->
+    <script src="../assets-lab/js/track-key.js"></script>
+</body></html>

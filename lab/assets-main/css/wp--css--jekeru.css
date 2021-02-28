@@ -1,0 +1,387 @@
+/***********************/
+/*wp hide items*/
+body.home img.attachment-post-thumbnail,
+body.home a.post-edit-link,
+body.page-id-315 img.attachment-post-thumbnail,
+body.page-id-315 #header,
+#branding,
+h1.entry-title,
+body.search .entry-summary,
+#copyright {
+    display: none !important
+}
+
+/*wp thumbnail*/
+img.attachment-post-thumbnail {
+    margin: 0em auto 1em auto;
+    max-height: 36px
+}
+
+/*wp next prev link*/
+.nav-links div {
+    margin: 1em
+}
+
+/*wp embed*/
+.wp-embedded-content {
+    position: relative !important;
+    clip: none;
+}
+
+/**********************/
+/*couleurs jeke*/
+body {
+    background: var(--color-bg--body);
+    color: var(--color-text);
+    font-family: "titling-gothic-fb-wide";
+    --color-text: #181a1e;
+    --color-text-dark: #292a2c;
+    --color-white: #1f1f1f;
+    --color-bg--trans: transparent !important;
+    --color-bg--body: #f1f1f1;
+    --color-link: rgb(0, 80, 92);
+    --color-link-hover: rgba(199, 221, 224, 0.57);
+    --color-link-visited: rgba(0, 80, 92, 0.747);
+    --color-link-active: rgb(41, 82, 88, .3);
+    --color-box-shadow: rgb(41, 82, 88, .3);
+}
+
+/*selection de multiple texte avec souris*/
+::selection {
+    background: var(--color-link-active)
+}
+
+/*focus clic on*/
+:focus {
+    background: var(--color-link-active);
+    box-shadow: 0 0 5px rgba(0, 80, 92, 0.5);
+}
+
+/**********************/
+/*liens*/
+a,
+a:link {
+    text-decoration: none;
+    color: var(--color-text-dark);
+    display: initial;
+    transition: color 0.3s;
+}
+
+.a--link--jekeru::after {
+    content: '¬';
+    display: inline-block;
+    font-weight: 700;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+a:visited {
+    color: var(--color-text-dark);
+    /*filter: invert();*/
+}
+
+a:hover {
+    color: var(--color-link-hover);
+}
+
+a:active {
+    color: var(--color-link-active);
+}
+
+/*cursor cutm
+* {
+    cursor: url(https://jekeru.fr/assets-main/img//cursor.png), auto !important;
+}
+
+a:link,
+a:hover {
+    cursor: url(https://jekeru.fr/assets-main/img//GunBusy.cur), auto !important;
+}
+*/
+/*styling elements*/
+p {
+    transition: color 0.3s;
+}
+
+p:active {
+    color: var(--color-link-active);
+}
+
+strong,
+.bold,
+b {
+    font-weight: bold;
+    font-weight: 700;
+}
+
+em {
+    font-style: italic;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+ul,
+.table-wrap ol {
+    width: auto;
+    display: flex;
+    flex-flow: wrap;
+    /*justify-content: space-around*/
+}
+
+ul li,
+.table-wrap ol li {
+    margin-right: 1em
+}
+
+hr {
+    width: 100%;
+}
+
+/**********************/
+/*sizing containers*/
+#container {
+    max-width: 1160px;
+    margin: auto;
+    padding: 5px;
+}
+
+/*pages contenu flex*/
+.entry-content,
+body.search #content {
+    padding: 1em;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+/* articles content*/
+#content article {
+    padding: 0 1em
+}
+
+.align-center-flex {
+    display: flex;
+    align-items: center;
+}
+
+/**********************/
+/*menu nav*/
+.trigger {
+    cursor: crosshair
+}
+
+#logo-link {
+    padding-right: 1em;
+    text-align: end;
+}
+
+div.flex-head-elements {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 1em;
+    position: relative;
+}
+
+#menu {
+    width: auto;
+    position: relative;
+    top: 0
+}
+
+#menu ul {
+    margin-top: 0;
+    flex-flow: column;
+}
+
+/**********************/
+/*overlay nav*/
+.overlay {
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-color: var(--color-bg--body);
+    background-color: var(--color-bg--body);
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    width: 100%;
+    text-align: left;
+}
+
+/*hoverfx underline css*/
+li {
+    position: relative
+}
+
+@media (min-width: 767px) {
+
+    .ul-hover li:before,
+    ul.ul-hover li:before {
+        content: "";
+        position: absolute;
+        width: 96%;
+        height: 2px;
+        bottom: -0px;
+        left: 0%;
+        right: 0%;
+        background-color: var(--color-text-dark);
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.15s ease-in-out 0s;
+        transition: all 0.15s ease-in-out 0s;
+    }
+
+    .ul-hover li:before {
+        background-color: var(--color-text-dark);
+    }
+
+    ul.ul-hover li.active:before,
+    ul.ul-hover li:hover:before,
+    .ul-hover li.active:before,
+    .ul-hover li:hover:before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+}
+
+/*hoverfx underline css*/
+
+/************* dark mode ******************/
+body.dark--mode--jekeru {
+    --color-bg--body: #181a1e;
+    --color-text: #f1f1f1;
+    --color--black: #1f1f1f;
+    --color-text-dark: #424499;
+    --color-link: rgb(41, 82, 88);
+    --color-link-hover: rgba(41, 82, 88, 0.57);
+    --color-link-visited: rgba(41, 82, 88, 0.747);
+    --color-link-active: rgba(41, 82, 88, 0.747);
+}
+
+.toggledark {
+    background: #f1f1f1;
+    border: 1px solid #1f1f1f;
+    width: 45px;
+    height: 20px;
+    cursor: crosshair;
+    border-radius: 20px;
+    transition: 0.5s;
+    transform: translate(25%)
+}
+
+.toggledark.active {
+    background: var(--color-text-dark);
+    border: 1px solid #f1f1f1;
+}
+
+.toggledark:before {
+    left: 0px;
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: var(--color-text-dark);
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.toggledark.active:before {
+    left: 27px;
+    background: #fff;
+}
+
+
+
+/******************************* screen media*/
+/*hide mob/deskt*/
+@media (min-width: 767px) {
+    .hide-desk {
+        display: none
+    }
+}
+
+@media (max-width: 767px) {
+    .hide-mob {
+        display: none
+    }
+}
+
+/*------------------------------------------
+  Responsive Grid Media Queries - 1280, 1024, 768, 480
+   1280-1024   - desktop (default grid)
+   1024-768    - tablet landscape
+   768-480     - tablet 
+   480-less    - phone landscape & smaller
+--------------------------------------------*/
+
+body::after {
+    content: '©';
+    position: fixed;
+    bottom: 2em;
+    transform: rotate(180deg);
+    right: 2em;
+    writing-mode: vertical-rl;
+    color: var(--color-text-dark);
+    font-size: .7em;
+}
+
+@media (min-width: 1280px) {
+    body::after {
+        content: '1280+';
+    }
+
+    .main {
+        max-width: 1281px;
+    }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+    body::after {
+        content: '1024-1280';
+    }
+
+    .main {
+        max-width: 1281px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    body::after {
+        content: '786-1024';
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+    body::after {
+        content: '480-786';
+    }
+}
+
+@media all and (max-width: 480px) {
+    body::after {
+        content: '0-480';
+    }
+
+    body,
+    html {
+        font-size: .83333rem;
+    }
+}

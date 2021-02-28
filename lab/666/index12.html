@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <!------------------------------------------------------------------->
+    <link rel="stylesheet" href="https://jekeru.fr/assets-main/css/base.min.css">
+    <link href="https://jekeru.fr/assets-main/css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="https://jekeru.fr/assets-main/css/common.css" rel="stylesheet" type="text/css" />
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://jekeru.fr/assets-main/font/css--jekeru--font.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://jekeru.fr/assets-main/css/css--jekeru.css" />
+    <!-- --- % --- -->
+    <link rel="stylesheet" type="text/css" href="../assets-lab/css/demo-zone.css" />
+    <!------------------------------------------------------------------->
+    <script>
+        document.documentElement.className = "js";
+        var supportsCssVars = function() {
+            var e, t = document.createElement("style");
+            return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window
+                .CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
+        };
+        supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+
+    </script>
+</head>
+
+<body>
+    <main>
+        <div class="message">Please view this demo on a desktop.</div>
+        <div class="title">
+            <h2>Jekeru/lab</h2>
+        </div>
+        <div class="content--fixed">
+            <nav class="demos">
+                <a class="demo" href="index.html"><span>D1</span></a>
+                <a class="demo" href="index2.html"><span>D2</span></a>
+                <a class="demo" href="index3.html"><span>D3</span></a>
+                <a class="demo" href="index4.html"><span>D4</span></a>
+                <a class="demo" href="index5.html"><span>D5</span></a>
+                <a class="demo" href="index6.html"><span>D6</span></a>
+                <a class="demo" href="index7.html"><span>D7</span></a>
+                <a class="demo" href="index8.html"><span>D8</span></a>
+                <a class="demo" href="index9.html"><span>D9</span></a>
+                <a class="demo" href="index10.html"><span>D10</span></a>
+                <a class="demo" href="index11.html"><span>D11</span></a>
+                <a class="demo demo--current" href="index12.html"><span>D12</span></a>
+                <a class="demo" href="index-daj.html"><span>DDaj</span></a>
+                <a class="demo" href="index-lab.html"><span>DLab</span></a>
+                <a class="demo" href="index-stud.html"><span>Dstud</span></a>
+                <a class="demo" href="index-swsm.html"><span>Dswsm</span></a>
+            </nav>
+        </div>
+        <div class="content">
+            <style>
+                body,
+                html {
+                    overflow-x: hidden;
+                }
+
+                body h1 {
+                    /*font-family: Work Sans;*/
+                    text-align: left;
+                    background-color: #2727e6;
+                    font-size: 32px;
+                    line-height: 1.5;
+                }
+
+                header {
+                    position: relative;
+                    top: 30px;
+                    left: 40px;
+                    z-index: 1;
+                }
+
+                @keyframes fadein {
+                    0% {
+                        opacity: 0;
+                    }
+
+                    100% {
+                        opacity: 1;
+                    }
+                }
+
+                img {
+                    position: absolute;
+                    top: 200px;
+                    left: 200px;
+                    transform: translate(-50%, -50%) scale(0.5);
+                    animation: fadein 0.5s;
+                    z-index: 0;
+                }
+
+            </style>
+
+            <header>
+                <h1>Clovis.rhan > click anywhere</h1>
+            </header>
+
+            <script src="../assets-lab/js/clicker.js"></script>
+        </div>
+    </main>
+    <!-- <script src="js/anime.min.js"></script>-->
+    <script src="../assets-lab/js/track-key.js"></script>
+</body>
+
+</html>

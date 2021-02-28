@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <!------------------------------------------------------------------->
+    <link rel="stylesheet" href="https://jekeru.fr/assets-main/css/base.min.css">
+    <link href="https://jekeru.fr/assets-main/css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="https://jekeru.fr/assets-main/css/common.css" rel="stylesheet" type="text/css" />
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://jekeru.fr/assets-main/font/css--jekeru--font.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://jekeru.fr/assets-main/css/css--jekeru.css" />
+    <!-- --- % --- -->
+    <link rel="stylesheet" type="text/css" href="../assets-lab/css/demo-zone.css" />
+    <!------------------------------------------------------------------->
+    <script>
+        document.documentElement.className = "js";
+        var supportsCssVars = function() {
+            var e, t = document.createElement("style");
+            return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window
+                .CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
+        };
+        supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+    </script>
+</head>
+
+<body>
+    <div class="message">Please view this demo on a desktop.</div>
+    <div class="title">
+        <h2>Jekeru/lab</h2>
+    </div>
+    <div class="content--fixed">
+        <nav class="demos">
+            <a class="demo" href="index.html"><span>D1</span></a>
+            <a class="demo" href="index2.html"><span>D2</span></a>
+            <a class="demo" href="index3.html"><span>D3</span></a>
+            <a class="demo" href="index4.html"><span>D4</span></a>
+            <a class="demo" href="index5.html"><span>D5</span></a>
+            <a class="demo" href="index6.html"><span>D6</span></a>
+            <a class="demo" href="index7.html"><span>D7</span></a>
+            <a class="demo demo--current" href="index8.html"><span>D8</span></a>
+            <a class="demo" href="index9.html"><span>D9</span></a>
+            <a class="demo" href="index10.html"><span>D10</span></a>
+            <a class="demo" href="index11.html"><span>D11</span></a>
+            <a class="demo" href="index12.html"><span>D12</span></a>
+            <a class="demo" href="index-daj.html"><span>DDaj</span></a>
+            <a class="demo" href="index-lab.html"><span>DLab</span></a>
+            <a class="demo" href="index-stud.html"><span>Dstud</span></a>
+            <a class="demo" href="index-swsm.html"><span>Dswsm</span></a>
+        </nav>
+    </div>
+    <style>
+        .container--hv {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden
+        }
+
+        body .container--hv section {
+            font-size: 80px;
+            line-height: 100px;
+            text-align: center;
+            background-color: var(--color-bg--trans);
+            color: #ffffff;
+        }
+
+        .container--hv section {
+            min-width: 1200px;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-auto-rows: 100px;
+        }
+
+        .container--hv section .div {
+            font-weight: 100;
+            transform: scale(0.2);
+            /*transition: transform 0.75s;*/
+        }
+    </style>
+    <div class="container--hv">
+        <section>
+            <div class="div" style="transform: scale(0.0201962); font-weight: 100;">s</div>
+            <div class="div" style="transform: scale(0.0271956); font-weight: 100;">u</div>
+            <div class="div" style="transform: scale(0.0366048); font-weight: 100;">p</div>
+            <div class="div" style="transform: scale(0.0492413); font-weight: 100;">e</div>
+            <div class="div" style="transform: scale(0.0661899); font-weight: 100;">r</div>
+            <div class="div" style="transform: scale(0.0888801); font-weight: 100;">h</div>
+            <div class="div" style="transform: scale(0.119174); font-weight: 100;">i</div>
+            <div class="div" style="transform: scale(0.159447); font-weight: 200;">s</div>
+            <div class="div" style="transform: scale(0.212607); font-weight: 200;">u</div>
+            <div class="div" style="transform: scale(0.281879); font-weight: 300;">p</div>
+            <div class="div" style="transform: scale(0.369792); font-weight: 300;">e</div>
+            <div class="div" style="transform: scale(0.474469); font-weight: 400;">r</div>
+            <div class="div" style="transform: scale(0.020712); font-weight: 100;">h</div>
+            <div class="div" style="transform: scale(0.0279488); font-weight: 100;">i</div>
+            <div class="div" style="transform: scale(0.0377118); font-weight: 100;">s</div>
+            <div class="div" style="transform: scale(0.0508811); font-weight: 100;">u</div>
+            <div class="div" style="transform: scale(0.0686418); font-weight: 100;">p</div>
+            <div class="div" style="transform: scale(0.0925883); font-weight: 100;">e</div>
+            <div class="div" style="transform: scale(0.124862); font-weight: 100;">r</div>
+            <div class="div" style="transform: scale(0.168333); font-weight: 200;">h</div>
+            <div class="div" style="transform: scale(0.226821); font-weight: 200;">i</div>
+            <div class="div" style="transform: scale(0.305355); font-weight: 300;">s</div>
+            <div class="div" style="transform: scale(0.410343); font-weight: 400;">u</div>
+            <div class="div" style="transform: scale(0.548968); font-weight: 500;">p</div>
+            <div class="div" style="transform: scale(0.0207553); font-weight: 100;">e</div>
+            <div class="div" style="transform: scale(0.0280122); font-weight: 100;">r</div>
+            <div class="div" style="transform: scale(0.0378051); font-weight: 100;">h</div>
+            <div class="div" style="transform: scale(0.0510197); font-weight: 100;">i</div>
+            <div class="div" style="transform: scale(0.0688498); font-weight: 100;">s</div>
+            <div class="div" style="transform: scale(0.0929043); font-weight: 100;">u</div>
+            <div class="div" style="transform: scale(0.12535); font-weight: 200;">p</div>
+            <div class="div" style="transform: scale(0.169101); font-weight: 200;">e</div>
+            <div class="div" style="transform: scale(0.228065); font-weight: 200;">r</div>
+            <div class="div" style="transform: scale(0.307454); font-weight: 300;">h</div>
+            <div class="div" style="transform: scale(0.414111); font-weight: 400;">i</div>
+            <div class="div" style="transform: scale(0.55652); font-weight: 500;">s</div>
+            <div class="div" style="transform: scale(0.0203224); font-weight: 100;">u</div>
+            <div class="div" style="transform: scale(0.0273797); font-weight: 100;">p</div>
+            <div class="div" style="transform: scale(0.036875); font-weight: 100;">e</div>
+            <div class="div" style="transform: scale(0.0496408); font-weight: 100;">r</div>
+            <div class="div" style="transform: scale(0.0667859); font-weight: 100;">h</div>
+            <div class="div" style="transform: scale(0.0897788); font-weight: 100;">i</div>
+            <div class="div" style="transform: scale(0.120547); font-weight: 100;">s</div>
+            <div class="div" style="transform: scale(0.161579); font-weight: 200;">u</div>
+            <div class="div" style="transform: scale(0.215988); font-weight: 200;">p</div>
+            <div class="div" style="transform: scale(0.287383); font-weight: 300;">e</div>
+            <div class="div" style="transform: scale(0.379052); font-weight: 400;">r</div>
+            <div class="div" style="transform: scale(0.490554); font-weight: 400;">h</div>
+            <div class="div" style="transform: scale(0.01945); font-weight: 100;">i</div>
+            <div class="div" style="transform: scale(0.0261105); font-weight: 100;">s</div>
+            <div class="div" style="transform: scale(0.0350176); font-weight: 100;">u</div>
+            <div class="div" style="transform: scale(0.0469041); font-weight: 100;">p</div>
+            <div class="div" style="transform: scale(0.0627213); font-weight: 100;">e</div>
+            <div class="div" style="transform: scale(0.0836849); font-weight: 100;">r</div>
+            <div class="div" style="transform: scale(0.111307); font-weight: 100;">h</div>
+            <div class="div" style="transform: scale(0.147379); font-weight: 200;">i</div>
+            <div class="div" style="transform: scale(0.193811); font-weight: 200;">s</div>
+            <div class="div" style="transform: scale(0.252103); font-weight: 300;">u</div>
+            <div class="div" style="transform: scale(0.3219); font-weight: 300;">p</div>
+            <div class="div" style="transform: scale(0.397513); font-weight: 400;">e</div>
+            <div class="div" style="transform: scale(0.0182092); font-weight: 100;">r</div>
+            <div class="div" style="transform: scale(0.0243173); font-weight: 100;">h</div>
+            <div class="div" style="transform: scale(0.0324145); font-weight: 100;">i</div>
+            <div class="div" style="transform: scale(0.0431064); font-weight: 100;">s</div>
+            <div class="div" style="transform: scale(0.0571502); font-weight: 100;">u</div>
+            <div class="div" style="transform: scale(0.0754627); font-weight: 100;">p</div>
+            <div class="div" style="transform: scale(0.0990948); font-weight: 100;">e</div>
+            <div class="div" style="transform: scale(0.129126); font-weight: 200;">r</div>
+            <div class="div" style="transform: scale(0.166395); font-weight: 200;">h</div>
+            <div class="div" style="transform: scale(0.210889); font-weight: 200;">i</div>
+            <div class="div" style="transform: scale(0.260575); font-weight: 300;">s</div>
+            <div class="div" style="transform: scale(0.309579); font-weight: 300;">u</div>
+            <div class="div" style="transform: scale(0.0166936); font-weight: 100;">p</div>
+            <div class="div" style="transform: scale(0.0221466); font-weight: 100;">e</div>
+            <div class="div" style="transform: scale(0.0292968); font-weight: 100;">r</div>
+            <div class="div" style="transform: scale(0.0386162); font-weight: 100;">h</div>
+            <div class="div" style="transform: scale(0.0506664); font-weight: 100;">i</div>
+            <div class="div" style="transform: scale(0.0660803); font-weight: 100;">s</div>
+            <div class="div" style="transform: scale(0.0855034); font-weight: 100;">u</div>
+            <div class="div" style="transform: scale(0.109459); font-weight: 100;">p</div>
+            <div class="div" style="transform: scale(0.138081); font-weight: 200;">e</div>
+            <div class="div" style="transform: scale(0.170653); font-weight: 200;">r</div>
+            <div class="div" style="transform: scale(0.204933); font-weight: 200;">h</div>
+            <div class="div" style="transform: scale(0.236512); font-weight: 200;">i</div>
+        </section>
+    </div>
+    <script src="../assets-lab/js/hover.js"></script>
+
+    <!-- <script src="js/anime.min.js"></script>-->
+    <script src="../assets-lab/js/track-key.js"></script>
+</body></html>

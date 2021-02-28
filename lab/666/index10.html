@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <!------------------------------------------------------------------->
+    <link rel="stylesheet" href="https://jekeru.fr/assets-main/css/base.min.css">
+    <link href="https://jekeru.fr/assets-main/css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="https://jekeru.fr/assets-main/css/common.css" rel="stylesheet" type="text/css" />
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://jekeru.fr/assets-main/font/css--jekeru--font.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://jekeru.fr/assets-main/css/css--jekeru.css" />
+    <!-- --- % --- -->
+    <link rel="stylesheet" type="text/css" href="../assets-lab/css/demo-zone.css" />
+    <!------------------------------------------------------------------->
+    <script>
+        document.documentElement.className = "js";
+        var supportsCssVars = function() {
+            var e, t = document.createElement("style");
+            return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window
+                .CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
+        };
+        supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+
+    </script>
+</head>
+
+<body>
+    <main>
+        <div class="message">Please view this demo on a desktop.</div>
+        <div class="title">
+            <h2>Jekeru/lab</h2>
+        </div>
+        <div class="content--fixed">
+            <nav class="demos">
+                <a class="demo" href="index.html"><span>D1</span></a>
+                <a class="demo" href="index2.html"><span>D2</span></a>
+                <a class="demo" href="index3.html"><span>D3</span></a>
+                <a class="demo" href="index4.html"><span>D4</span></a>
+                <a class="demo" href="index5.html"><span>D5</span></a>
+                <a class="demo" href="index6.html"><span>D6</span></a>
+                <a class="demo" href="index7.html"><span>D7</span></a>
+                <a class="demo" href="index8.html"><span>D8</span></a>
+                <a class="demo" href="index9.html"><span>D9</span></a>
+                <a class="demo demo--current" href="index10.html"><span>D10</span></a>
+                <a class="demo" href="index11.html"><span>D11</span></a>
+                <a class="demo" href="index12.html"><span>D12</span></a>
+                <a class="demo" href="index-daj.html"><span>DDaj</span></a>
+                <a class="demo" href="index-lab.html"><span>DLab</span></a>
+                <a class="demo" href="index-stud.html"><span>Dstud</span></a>
+                <a class="demo" href="index-swsm.html"><span>Dswsm</span></a>
+            </nav>
+        </div>
+        <div class="content">
+            <style>
+                body,
+                html {
+                    overflow-x: hidden;
+                }
+
+                body {
+                    background-color: #181a1e;
+                    color: #ffffff;
+                    height: 100%;
+                }
+
+                h1 {
+                    position: fixed;
+                    top: 48px;
+                    left: 48px;
+                    z-index: 1;
+                    font-weight: 900;
+                    font-size: 36px;
+                    line-height: 1.25;
+                }
+
+                a.link {
+                    position: fixed;
+                    top: 48px;
+                    right: 48px;
+                    color: white;
+                    text-decoration: none;
+                }
+
+                h1,
+                a {
+                    mix-blend-mode: difference;
+                }
+
+                canvas {
+                    vertical-align: bottom;
+                    /*filter: hue-rotate(270deg);*/
+                }
+
+            </style>
+            </head>
+
+            <body>
+                <h1>Oil paintings</h1>
+
+                <a href="#" class="link">Instagram</a>
+
+                <canvas></canvas>
+
+                <script src="../assets-lab/js/drawer.js"></script>
+        </div>
+    </main>
+    <!-- <script src="js/anime.min.js"></script>-->
+    <script src="../assets-lab/js/track-key.js"></script>
+</body>
+
+</html>

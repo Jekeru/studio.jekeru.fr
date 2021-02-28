@@ -1,0 +1,129 @@
+ html {
+     scroll-behavior: smooth;
+ }
+ body {
+     background: pink;
+ }
+
+ /****************CANVAS**********************************/
+
+ canvas {
+     position: fixed;
+     top: 0;
+     left: 0;
+     z-index: -1;
+     margin: auto;
+     touch-action: none;
+ }
+
+ /* Use a media query to add a break point at 800px: */
+ @media screen and (max-width:400px) {
+
+     canvas {
+         display: none;
+
+     }
+
+     .bgsombre {
+         filter: invert(1) hue-rotate(.5turn);
+         background:
+             rgba(17, 17, 17, 0.9);
+     }
+
+     body {
+         transition: filter 2s ease;
+     }
+ }
+
+/**/
+.opac--zone {
+    background: rgba(255, 255, 255, .2);
+    mix-blend-mode: exclusion;
+    filter: invert(1);
+}
+
+.opac--zone:hover {
+    background: transparent;
+    color: white;
+}
+
+/**/
+
+
+
+
+
+/* divrotate*/
+   .label:after {
+        content: 'Web';
+    }
+
+    .label:hover:after {
+        content: 'Space Designer';
+    }
+
+    .label2:after {
+        content: 'Portfolio_2019';
+    }
+
+    .label2:hover:after {
+        content: 'Kersaudy Julien';
+    }
+
+    .label3:after {
+        content: 'Work';
+    }
+
+    .label3:hover:after {
+        content: '    .2019';
+    }
+
+    .divrotate {
+        margin: 20px;
+        width: 100px;
+        height: 100px;
+    }
+
+    
+    .spin:hover {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+
+
+    }
+
+/**/
+
+/*flexfooter*/
+   .left {
+       padding: 20px;
+       float: left;
+       width: 20%;
+       
+   }
+
+   .main {
+       padding: 20px;
+       float: left;
+       width: 60%;
+   }
+
+   .right {
+       padding: 20px;
+       float: left;
+       width: 20%;
+   }
+
+   @media screen and (max-width:800px) {
+
+       .left,
+       .main,
+       .right {
+           width: 100%;
+           /* The width is 100%, when the viewport is 800px or smaller */
+       }
+   }
+
+/**/

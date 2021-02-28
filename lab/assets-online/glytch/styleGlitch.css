@@ -1,0 +1,77 @@
+.glitch--8 [data-char] {
+    --split: 50;
+    color: transparent;
+    position: relative;
+}
+
+.glitch--8 [data-char]:after,
+.glitch--8 [data-char]:before {
+    content: attr(data-char);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    -webkit-clip-path: var(--clip);
+    clip-path: var(--clip);
+}
+
+.glitch--8 [data-char]:after {
+    --clip: inset(0 0 calc(var(--split) * 1%) 0);
+    --shift-y: -20;
+    --shift-x: 50;
+    -webkit-animation: shift 3s infinite steps(1);
+    animation: shift 3s infinite steps(1);
+}
+
+.glitch--8 [data-char]:before {
+    --shift-x: -50;
+    -webkit-animation: shift 4s infinite steps(1);
+    animation: shift 4s infinite steps(1);
+    --clip: inset(calc((95 - var(--split)) * 1%) 0 0 0);
+}
+
+.glitch--8 [data-char="C"]:after,
+.glitch--8 [data-char="H"]:after {
+    --shift-y: 25;
+    --shift-x: 0;
+}
+
+
+.char {
+    color: inherit;
+    display: inline-block;
+}
+
+@-webkit-keyframes shift {
+
+    0%,
+    68%,
+    72%,
+    100% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+
+    70% {
+        -webkit-transform: translate(calc(var(--shift-x, 25) * 1%), calc(var(--shift-y, 0) * 1%));
+        transform: translate(calc(var(--shift-x, 25) * 1%), calc(var(--shift-y, 0) * 1%));
+    }
+}
+
+@keyframes shift {
+
+    0%,
+    68%,
+    72%,
+    100% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+
+    70% {
+        -webkit-transform: translate(calc(var(--shift-x, 25) * 1%), calc(var(--shift-y, 0) * 1%));
+        transform: translate(calc(var(--shift-x, 25) * 1%), calc(var(--shift-y, 0) * 1%));
+    }
+}

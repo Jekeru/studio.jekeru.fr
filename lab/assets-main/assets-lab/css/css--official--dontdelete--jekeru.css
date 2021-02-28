@@ -1,0 +1,186 @@
+/*couleur jeke*/
+:root {
+    --mainColor: #000;
+}
+
+body {
+    --color-text: #000;
+    --color-bg: #fff;
+    --color-bg--body: transparent;
+    --color-link: #00505c;
+    --color-link-hover: #000;
+    --color-block-link: #000;
+    --color-block-link-hover: #000;
+    --color-block-title: #000;
+    --color-block-title-hover: #000;
+}
+
+/*couleur jeke*/
+/*setup body, html jeke */
+body,
+html {
+    font-family: 'Source Code Pro', monospace;
+
+    color: var(--color-text);
+    background-color: var(--color-bg--body);
+
+    /*min-height:100vh;*/
+    font-size: 13px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/*setup body, html jeke*/
+/*main containers jeke*/
+
+
+.site-main {
+margin-right: 10%;
+margin-left: 10%;
+
+}
+#colophon {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    right: 10%;
+    margin:2em 2em 0em 2em;
+}
+
+.site {
+    padding: 2em;
+
+}
+.nav-previous, .nav-next {border:1px solid;}
+.post-navigation {}
+
+.font--fixed--jekeru--link {
+font-size:2em;
+}
+
+
+
+ul, ol {
+    margin: 0 0 0 0;
+    padding: 0;
+}
+
+
+
+/*main containers jeke*/
+/*--mobiledeviceSreen-- until-tablet-breakoff*/
+@media screen and (min-device-width: 1024px) {
+
+    /* CSS */
+
+}
+
+
+
+
+
+
+/*--mobiledeviceSreen-- until-tablet-breakoff*/
+/* fixed stuf*/
+
+
+
+
+
+
+/* fix stuf*/
+/* typo*/
+p {}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {}
+
+h1 {
+    font-size: ;
+    line-height:
+}
+
+h2 {}
+
+h3 {}
+
+h4 {}
+
+h5 {}
+
+h6 {}
+
+@media only screen and (min-width : 1024px) {
+
+    /* Styles pour cette Media Queries */
+    #site-title > a,
+    h1 {}
+
+    p {}
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+
+    /* Styles pour cette Media Queries */
+    #site-title > a,
+    h1 {}
+
+    p {}
+}
+
+@media only screen and (min-width : 480px) and (max-width : 768px) {
+
+    /* Styles pour cette Media Queries */
+    #site-title > a,
+    h1 {}
+
+    p {}
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+
+    /* Styles pour cette Media Queries */
+    #site-title > a,
+    h1 {}
+
+    p {}
+
+}
+
+@media only screen and (max-width : 320px) {
+
+    /* Styles pour cette Media Queries */
+    #site-title > a,
+    h1 {}
+
+    p {}
+.site-main {
+margin-right: 0%;
+margin-left: 0%;
+
+}
+}
+
+/* typo*/
+
+/* setup a href */
+a {
+    transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    text-decoration: none;
+    color: var(--color-link);
+}
+
+a:hover {
+    color: var(--color-link-hover);
+}
+
+/* setup a href */

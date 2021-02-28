@@ -1,0 +1,31 @@
+     <!-- 3dweb -->
+     <style>
+        .p5Canvas {
+            position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        height: 100% !important;
+        }
+
+    </style>
+    <script type="text/javascript" src='https://lab.jekeru.fr/assets-online/p5.min.js' defer></script>
+    <script type="text/javascript" src='https://lab.jekeru.fr/assets-online/perlin.js'defer></script>
+    <script type="text/javascript" src="https://lab.jekeru.fr/assets-online/waves-3d/script-wave-3d.js"defer></script>
+    <!-- 3dweb -->
+
+
+<!-- /****************CANVAS**********************************/-->
+<style>
+    .p5Canvas {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: pink !important;
+        z-index: -1;
+        height: 100% !important;
+    }
+</style>
+<script type="text/javascript" src="https://lab.jekeru.fr/assets-online/p5.min.js" defer></script>
+<script type="text/javascript" src="https://lab.jekeru.fr/assets-online/waves-3d/script-wave.js" defer></script>
+<!-- /****************CANVAS**********************************/-->

@@ -11,7 +11,7 @@
 <header>
     <nav class="nav main">
         <li class="hide-mobile">use key arrow to navigate</li>
-        <li><a class="nav-item" href="imagesloaded.php"></a></li>
+        <li><a class="nav-item" href="?.php"></a></li>
         <li><a class="nav-item active" href="index.php">INDX</a></li>
         <li><a class="nav-item" href="css.php">Next</a></li>
     </nav>
