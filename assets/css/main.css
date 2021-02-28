@@ -55,6 +55,7 @@ a:link {
     color: var(--color-text-dark);
     transition: color 0.3s;
     cursor: crosshair;
+    z-index: +9;
 }
 
 a:visited {
@@ -123,6 +124,11 @@ a:active,
 
 /* Custom CSS Nav
  * --------------------------------------- */
+.nav {
+    filter: invert(1);
+    mix-blend-mode: difference;
+}
+
 nav.main {
     position: fixed;
     bottom: 0;
@@ -131,7 +137,7 @@ nav.main {
     flex-flow: wrap;
     justify-content: flex-end;
     align-items: baseline;
-    z-index: +999;
+    z-index: 100;
 }
 
 nav.main li {
@@ -159,11 +165,17 @@ li {
     overflow: hidden;
 }
 
-#Studio {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+@media all and (min-width: 768px) {
+    #Studio {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    body.index #Studio {
+        position: relative;
+    }
 }
 
 #Studio span,
@@ -226,7 +238,7 @@ body.dark--mode--jekeru {
 }
 
 .toggledark {
-    background: #f1f1f1;
+    background: var(--color-bg--trans);
     border: 1px solid #1f1f1f;
     width: 45px;
     height: 20px;

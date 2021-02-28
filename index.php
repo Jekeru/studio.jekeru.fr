@@ -4,7 +4,7 @@
 <head>
 	<?php include("includes/head-tag-contents.php");?>
 </head>
-<body>
+<body class="index">
 
 <?php include("includes/design-top.php");?>
 <?php include("includes/navigation.php");?>
