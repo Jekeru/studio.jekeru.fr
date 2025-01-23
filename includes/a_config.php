@@ -1,4 +1,5 @@
 <?php
+//function non comprise
 	switch ($_SERVER["SCRIPT_NAME"]) {
 		case "/php-template/css.php":
 			$CURRENT_PAGE = "Css"; 
