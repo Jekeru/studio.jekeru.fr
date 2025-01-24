@@ -144,6 +144,10 @@ nav.main li {
     padding: 1em;
 }
 
+.nav.main li:nth-child(3) {
+    display: none;
+}
+
 ul,
 li {
     list-style: none;
